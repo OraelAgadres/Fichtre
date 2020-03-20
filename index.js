@@ -17,7 +17,7 @@ bot.on("message", async (msg) => {
 		var args = cmdArray.slice(1)
 
 		if (cmd == "ping") {
-			msg.channel.send("pong :joy:")
+			msg.reply("pong :joy:")
 		}
 
 	}
