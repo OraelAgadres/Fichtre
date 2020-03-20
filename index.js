@@ -23,8 +23,18 @@ bot.on("message", async (msg) => {
 	}
 
 
-  	if (cmd === 'avatar') {
-    	msg.reply(msg.author.displayAvatarURL());
+	if (msg.content === 'emb') {
+
+		const embed = new MessageEmbed()
+		  	.setTitle('A slick little embed')
+		  	.setColor(0xff0000)
+		  	.setDescription('Hello, this is a slick embed!');
+		msg.channel.send(embed);
+	}
+
+
+	if (cmd === 'avatar') {
+		msg.reply(msg.author.displayAvatarURL());
 	}
 
 });
