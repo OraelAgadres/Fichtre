@@ -10,6 +10,7 @@ bot.on("ready", async () => {
 });
 
 bot.on("message", async (msg) => {
+	console.log("message")
 	if (msg.content.startsWith(config.prefix) && !msg.author.bot) {
 
 		console.log("message")
@@ -19,7 +20,7 @@ bot.on("message", async (msg) => {
 
 		var args = cmdArray.slice(1)
 
-		msg.channel.send
+		msg.channel.send(cmd)
 	}
 });
 
