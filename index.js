@@ -4,7 +4,7 @@ const config = require("./conf.js")
 
 
 bot.on("ready", async () => {
-	console.log("Hi i'm ready to kill some pussy")
+	console.log("i'm ready to kill some pussy")
 
 	bot.user.setActivity('Pie')
 });
@@ -24,7 +24,7 @@ bot.on("message", async (msg) => {
 
 
   	if (cmd === 'avatar') {
-    	message.reply(message.author.displayAvatarURL());
+    	msg.reply(msg.author.displayAvatarURL());
 	}
 
 });
