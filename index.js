@@ -10,8 +10,13 @@ bot.on("ready", async () => {
 });
 
 bot.on("message", async (msg) => {
-	if (msg.content == "bonjour") {
-		msg.channel.send("HelloWorld!")
+	if (msg.content.startsWith(config.prefix) && !msg.author.bot) {
+		var cmdArray = msg.content.substring(1).split()
+		var cmd = cmdArray[0]
+
+		var args = cmdArray.slice(1)
+
+		msg.channel.send
 	}
 });
 

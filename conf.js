@@ -1,5 +1,5 @@
 const config = {
-	prefix: "!",
+	prefix: "F!",
 	token: process.env.BOT_TOKEN
 };
 
