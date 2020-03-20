@@ -11,6 +11,9 @@ bot.on("ready", async () => {
 
 bot.on("message", async (msg) => {
 	if (msg.content.startsWith(config.prefix) && !msg.author.bot) {
+
+		console.log("message")
+
 		var cmdArray = msg.content.substring(1).split()
 		var cmd = cmdArray[0]
 
