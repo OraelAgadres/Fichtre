@@ -12,7 +12,7 @@ bot.on("ready", async () => {
 bot.on("message", async (msg) => {
 
 	if (msg.content.startsWith(config.prefix) && !msg.author.bot) {
-		var cmdArray = msg.content.substring(1).split()
+		var cmdArray = msg.content.substring(2).split()
 		var cmd = cmdArray[0]
 
 		var args = cmdArray.slice(1)
