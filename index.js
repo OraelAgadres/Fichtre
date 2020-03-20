@@ -23,7 +23,7 @@ bot.on("message", async (msg) => {
 	}
 
 
-	if (msg.content === 'emb') {
+	if (msg.cmd == 'emb') {
 
 		const embed = new MessageEmbed()
 		  	.setTitle('A slick little embed')
@@ -33,7 +33,7 @@ bot.on("message", async (msg) => {
 	}
 
 
-	if (cmd === 'avatar') {
+	if (cmd == 'avatar') {
 		msg.reply(msg.author.displayAvatarURL());
 	}
 
