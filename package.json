@@ -1,0 +1,15 @@
+{
+  "name": "Fichtre",
+  "version": "1.0.0",
+  "description": "A gud discord bot",
+  "main": "index.js",
+  "repository": "https://github.com/OraelAgadres/Fichtre.git",
+  "author": "INSYCO_NESH",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.0.2"
+  }
+}
