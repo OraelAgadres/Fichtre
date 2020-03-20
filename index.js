@@ -18,6 +18,9 @@ bot.on("message", async (msg) => {
 		var args = cmdArray.slice(1)
 
 		msg.channel.send(cmd)
+		for (var i = 0, c = args.length; i < c; i++) {
+			msg.channel.send(args[i])
+		}
 	}
 });
 
