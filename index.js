@@ -21,6 +21,12 @@ bot.on("message", async (msg) => {
 		}
 
 	}
+
+
+  	if (cmd === 'avatar') {
+    	message.reply(message.author.displayAvatarURL());
+	}
+
 });
 
 bot.login(config.token)
