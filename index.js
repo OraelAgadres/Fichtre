@@ -16,9 +16,9 @@ bot.on("message", async (msg) => {
 		var cmd = cmdArray[0]
 		var args = cmdArray.slice(1)
 
-		if (cmd == "test") {
-			nbMsg++;
-			msg.reply(nbMsg);
+		if (cmd == "count") {
+			process.env.BOT_count++;
+			msg.reply(process.env.BOT_count);
 		}
 
 		if (cmd == "ping") {
