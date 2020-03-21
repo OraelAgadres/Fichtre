@@ -5,7 +5,7 @@ const config = require("./conf.js")
 
 bot.on("ready", async () => {
 	console.log("i'm ready to kill some pussy")
-
+	nbMsg = 0
 	bot.user.setActivity('Pie')
 });
 
@@ -16,25 +16,15 @@ bot.on("message", async (msg) => {
 		var cmd = cmdArray[0]
 		var args = cmdArray.slice(1)
 
-		if (cmd == "ping") {
-			msg.reply("pong :joy:")
+		if (cmd == "test") {
+			nbMsg++;
+			msg.reply(nbMsg);
 		}
 
-	}
+		if (cmd == "ping") {
+			msg.reply("pong :joy:");
+		}
 
-
-	if (msg.cmd == 'emb') {
-
-		const embed = new MessageEmbed()
-		  	.setTitle('A slick little embed')
-		  	.setColor(0xff0000)
-		  	.setDescription('Hello, this is a slick embed!');
-		msg.channel.send(embed);
-	}
-
-
-	if (cmd == 'avatar') {
-		msg.reply(msg.author.displayAvatarURL());
 	}
 
 });
